@@ -17,6 +17,7 @@ connectDatabase();
 app.use(express.json());
 app.use(expenseRoutes);
 app.use(authRoutes);
+app.use(userRoutes);
 
 //setup server
 app.listen(port, () => {
