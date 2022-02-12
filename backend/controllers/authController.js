@@ -54,7 +54,7 @@ exports.login = async (req, res) => {
             process.env.JWT_SEC_KEY,
             { expiresIn: "1d" });
 
-        res.status(200).json({ message: "User logged in" });
+        res.status(200).json({ token: "accessToken" });
 
 
     } catch (err) {
